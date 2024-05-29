@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "real-estate-platform",
   "version": "1.0.0",
@@ -72,3 +73,5 @@
     "ts-node": "^10.0.0"
   }
 }
+=======
+>>>>>>> ea5fbf47fbf90600fec9b96cf60937b7671c5477
