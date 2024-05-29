@@ -14,6 +14,7 @@ datasource db {
 }
 
 model User {
+<<<<<<< HEAD
   id          Int        @id @default(autoincrement())
   email       String     @unique
   password    String
@@ -25,6 +26,14 @@ model User {
   Property    Property[]
   Otp         Otp[]
   Payment     Payment[]
+=======
+  id        Int        @id @default(autoincrement())
+  email     String     @unique
+  password  String
+  name      String?
+  createdAt DateTime   @default(now())
+  Property  Property[]
+>>>>>>> 9eee5c7e53e86a59d81ce729a7c6878aabe0ada6
 }
 
 model Property {
@@ -37,6 +46,7 @@ model Property {
   owner       User     @relation(fields: [ownerId], references: [id])
   createdAt   DateTime @default(now())
 }
+<<<<<<< HEAD
 
 model Otp {
   id        Int      @id @default(autoincrement())
@@ -61,3 +71,5 @@ enum Role {
   TENANT
   LANDLORD
 }
+=======
+>>>>>>> 9eee5c7e53e86a59d81ce729a7c6878aabe0ada6
